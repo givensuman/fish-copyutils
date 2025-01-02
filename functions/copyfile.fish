@@ -2,11 +2,10 @@
 function copyfile --description "Copy file contents to clipboard"
     argparse --min-args 1 --max-args 1 -- $argv
 
-    set -l file = $argv[1]
-    if ! -f $file
-        printf "file %s not found" $file
+    if test ! -f $argv[1]
+        echo "file $argv[1] not found"
         return 1
     end
 
-    cat $file | fish_clipboard_copy
+    cat $argv[1]
 end

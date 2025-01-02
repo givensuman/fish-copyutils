@@ -9,6 +9,6 @@ function copypath --description "Copy path to clipboard"
             pwd | fish_clipboard_copy
         case \*
             # https://fishshell.com/docs/current/cmds/realpath.html
-            realpath $argv | fish_clipboard_copy
+            realpath $argv[1] | fish_clipboard_copy
     end
 end
