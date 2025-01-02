@@ -2,6 +2,7 @@
 # Copies current dirrectory if not passed an argument
 function copypath --description "Copy path to clipboard"
     argparse --max-args 1 -- $argv
+    or return
 
     switch "$argv"
         case ""
