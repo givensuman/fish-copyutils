@@ -4,7 +4,7 @@ function copyfile --description "Copy file contents to clipboard"
     or return
 
     # If file does not exist
-    if test ! -f $argv[1]
+    if test ! -f "$argv[1]"
         echo "file $argv[1] not found"
         return 1
     end
