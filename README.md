@@ -20,7 +20,7 @@ Copy text in command line to clipboard
 echo "A command still being typed" # -> Copy with `ctrl+o`
 ```
 
-`ctrl+o` keybinding can be rebound with `copybuffer_keybind` variable
+`ctrl+o` keybinding can be rebound with `copybuffer_keybind` variable; just reinstall after doing so
 
 #### `copyfile`
 
