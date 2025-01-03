@@ -4,7 +4,7 @@ A port of the [Oh-My-Zsh](https://github.com/ohmyzsh/ohmyzsh) plugins [copybuffe
 
 ### Installation
 
-Install with [fisher](https://github.com/jorgebucaran/fisher)
+Install with [fisher](https://github.com/jorgebucaran/fisher):
 
 ```shell
 fisher install givensuman/fish-copyutils
@@ -50,7 +50,7 @@ As you might expect, currently heavily leverages the `fish_clipboard_copy` funct
 - `xsel` and `xclip` for X11
 - `clip.exe` on Windows
 
-See the [docs](https://fishshell.com/docs/current/cmds/fish_clipboard_copy.html) for more details
+See the [docs](https://fishshell.com/docs/current/cmds/fish_clipboard_copy.html) for more details.
 
 ### License
 
