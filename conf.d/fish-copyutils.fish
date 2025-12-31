@@ -1,12 +1,19 @@
 alias copyfile _fish_copyutils_copyfile
 alias copypath _fish_copyutils_copypath
 
+function copybuffer
+    commandline | fish_clipboard_copy
+    if command -v notify-send >/dev/null 2>&1
+        notify-send "Copied to clipboard" --icon=dialog-information
+    end
+end
+
 if set -q copybuffer_keybind
     # Bind `copybuffer` to copybuffer_keybind environment variable
-    bind $copybuffer_keybind _fish_copyutils_copybuffer
+    bind $copybuffer_keybind copybuffer
 else
     # or `ctrl+o` if one isn't set
-    bind \co _fish_copyutils_copybuffer
+    bind \co copybuffer
 end
 
 function _fish_copyutils_install --on-event fish-copyutils_install

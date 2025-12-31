@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="./assets/logo.png" alt="fish-copyutils" width="200" />
+</div>
+
 # fish-copyutils
 
 A port of the [Oh-My-Zsh](https://github.com/ohmyzsh/ohmyzsh) plugins [copybuffer](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copybuffer), [copyfile](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copyfile), and [copypath](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copypath) for the Fish shell.
@@ -38,7 +42,7 @@ Copy path to clipboard
 # both of these have the same result
 copypath /foo/bar # -> /foo/bar
 cd /foo/bar
-copypath # -> /foo/bar
+copypath          # -> /foo/bar
 ```
 
 ### Requirements
