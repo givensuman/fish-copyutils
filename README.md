@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/logo.png" alt="fish-copyutils" width="200" />
+  <img src="./assets/logo.png" alt="fish-copyutils" height="200" />
 </div>
 
 # fish-copyutils
@@ -58,4 +58,4 @@ See the [docs](https://fishshell.com/docs/current/cmds/fish_clipboard_copy.html)
 
 ### License
 
-[MIT](../LICENSE)
+[MIT](./LICENSE)
