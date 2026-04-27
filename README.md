@@ -4,7 +4,7 @@
 
 # fish-copyutils
 
-A port of the [Oh-My-Zsh](https://github.com/ohmyzsh/ohmyzsh) plugins [copybuffer](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copybuffer), [copyfile](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copyfile), and [copypath](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copypath) for the Fish shell.
+A port of the [Oh-My-Zsh](https://github.com/ohmyzsh/ohmyzsh) plugins [copybuffer](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copybuffer), [copyfile](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copyfile), and [copypath](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/copypath) for the Fish shell, plus some extras.
 
 ### Installation
 
@@ -53,9 +53,13 @@ cd /foo/bar
 copypath          # -> /foo/bar
 ```
 
+#### `copy`, `paste`
+
+Aliases for `fish_clipboard_copy` and `fish_clipboard_paste`.
+
 ### Requirements
 
-As you might expect, currently heavily leverages the `fish_clipboard_copy` function built into the shell, which only supports the following system clipboards:
+As you might expect, currently heavily leverages the `fish_clipboard_copy` and `fish_clipboard_paste` functions built into the shell, which only support the following system clipboards:
 
 - `pbcopy`
 - `wl-copy` using Wayland
