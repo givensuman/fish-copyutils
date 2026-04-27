@@ -1,4 +1,5 @@
 alias copyfile _fish_copyutils_copyfile
+alias pastefile _fish_copyutils_pastefile
 alias copypath _fish_copyutils_copypath
 
 if set -q copybuffer_keybind
@@ -14,6 +15,7 @@ end
 
 function _fish_copyutils_uninstall --on-event fish-copyutils_uninstall
     functions --erase copyfile
+    functions --erase pastefile
     functions --erase copypath
     if set -q copybuffer_keybind
         bind --erase $copybuffer_keybind

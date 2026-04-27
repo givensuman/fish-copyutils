@@ -34,6 +34,14 @@ Copy file contents to clipboard
 copyfile hello_world.txt # -> Hello, world!
 ```
 
+#### `pastefile`
+
+Paste clipboard contents to file
+
+```shell
+pastefile hello_world.txt # -> hello_world.txt created
+```
+
 #### `copypath`
 
 Copy path to clipboard
